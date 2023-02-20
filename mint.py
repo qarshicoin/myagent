@@ -7,9 +7,9 @@ import undetected_chromedriver as uc
 def run_session():
     chrome_options = uc.ChromeOptions()
     chrome_options.headless = True 
-    chrome_options.add_argument("--no-sandbox")
-    prefs = {"profile.managed_default_content_settings.images": 2}
-    chrome_options.add_experimental_option("prefs", prefs)
+    chrome_options.add_argument('--disable-gpu')
+    
+    
     driver = uc.Chrome(options=chrome_options)
     try:
         driver.get("https://mintme.onrender.com")
