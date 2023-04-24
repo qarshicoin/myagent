@@ -14,9 +14,11 @@ def run_session():
     chrome_options.add_argument(f'--disable-dev-shm-usage')
     driver = uc.Chrome(options=chrome_options)
     try:
-        driver.get("https://mrscan.onrender.com")
+        driver.get("https://myqarshi.onrender.com")
         print(f" connected to page")
-        for i in range(0,10000000):
+        i=0
+        while True:
+            i=i+1
             print(i)
         
    
