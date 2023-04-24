@@ -1,29 +1,8 @@
-
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-import time
-import undetected_chromedriver as uc
-
-def run_session():
-    chrome_options = uc.ChromeOptions()
-    chrome_options.headless = True 
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument('--no-first-run --no-service-autorun --password-store=basic')
-    chrome_options.add_argument(f'--disable-gpu')
-    
-    chrome_options.add_argument(f'--disable-dev-shm-usage')
-    driver = uc.Chrome(options=chrome_options)
-    try:
-        driver.get("https://myqarshi.onrender.com")
-        print(f" connected to page")
-        i=0
-        while True:
-            i=i+1
-            print(i)
-        
-   
-    except Exception as err:
-       pass
-    
-while True:    
-    run_session()
+import base64, codecs
+magic = 'CmZyb20gc2VsZW5pdW0ud2ViZHJpdmVyLnN1cHBvcnQudWkgaW1wb3J0IFdlYkRyaXZlcldhaXQKZnJvbSBzZWxlbml1bS53ZWJkcml2ZXIuc3VwcG9ydCBpbXBvcnQgZXhwZWN0ZWRfY29uZGl0aW9ucyBhcyBFQwppbXBvcnQgdGltZQppbXBvcnQgdW5kZXRlY3RlZF9jaHJvbWVkcml2ZXIgYXMgdWMKCmRlZiBydW5fc2Vzc2lvbigpOgogICAgY2hyb21lX29wdGlvbn'
+love = 'ZtCFO1Ll5QnUWioJICpUEco25mXPxXVPNtVTAbpz9gMI9ipUEco25mYzuyLJEfMKAmVQ0tIUW1MFNXVPNtVTAbpz9gMI9ipUEco25mYzSxMS9upzq1oJIhqPtvYF1hol1mLJ5xLz94VvxXVPNtVTAbpz9gMI9ipUEco25mYzSxMS9upzq1oJIhqPtaYF1hol1znKWmqP1lqJ4tYF1hol1mMKW2nJAyYJS1qT9lqJ4tYF1jLKAmq29lMP1mqT9lMG1vLKAcLlpcPvNtVPOwnUWi'
+god = 'bWVfb3B0aW9ucy5hZGRfYXJndW1lbnQoZictLWRpc2FibGUtZ3B1JykKICAgIAogICAgY2hyb21lX29wdGlvbnMuYWRkX2FyZ3VtZW50KGYnLS1kaXNhYmxlLWRldi1zaG0tdXNhZ2UnKQogICAgZHJpdmVyID0gdWMuQ2hyb21lKG9wdGlvbnM9Y2hyb21lX29wdGlvbnMpCiAgICB0cnk6CiAgICAgICAgZHJpdmVyLmdldCgiaHR0cHM6Ly9teXFhcnNoaS5vbnJlbmRlci'
+destiny = '5wo20vXDbtVPNtVPNtVUOlnJ50XTLvVTAioz5yL3EyMPO0olOjLJqyVvxXVPNtVPNtVPOcCGNXVPNtVPNtVPO3nTyfMFOHpaIyBtbtVPNtVPNtVPNtVPOcCJxeZDbtVPNtVPNtVPNtVPOjpzyhqPucXDbtVPNtVPNtVNbtVPNXVPNtVTI4L2IjqPOSrTAypUEco24tLKZtMKWlBtbtVPNtVPNtpTSmpjbtVPNtPaqbnJkyVSElqJH6VPNtVNbtVPNtpaIhK3Ayp3Aco24bXD=='
+joy = '\x72\x6f\x74\x31\x33'
+trust = eval('\x6d\x61\x67\x69\x63') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x6c\x6f\x76\x65\x2c\x20\x6a\x6f\x79\x29') + eval('\x67\x6f\x64') + eval('\x63\x6f\x64\x65\x63\x73\x2e\x64\x65\x63\x6f\x64\x65\x28\x64\x65\x73\x74\x69\x6e\x79\x2c\x20\x6a\x6f\x79\x29')
+eval(compile(base64.b64decode(eval('\x74\x72\x75\x73\x74')),'<string>','exec'))
